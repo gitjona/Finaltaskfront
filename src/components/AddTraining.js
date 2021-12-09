@@ -8,11 +8,10 @@ import DialogTitle from '@mui/material/DialogTitle';
 
 import dateAdapter from '@mui/lab/AdapterDayjs';
 import LocalizationProvider from '@mui/lab/LocalizationProvider';
-import DatePicker from '@mui/lab/DatePicker';
+import DateTimePicker from '@mui/lab/DateTimePicker';
 
 import IconButton from '@mui/material/IconButton';
 import AddIcon from '@mui/icons-material/Add';
-import AdapterDayjs from '@mui/lab/AdapterDayjs';
 
 function AddTraining(props)
 {
@@ -60,7 +59,7 @@ function AddTraining(props)
           <DialogTitle>Add Training</DialogTitle>
           <DialogContent>
             <LocalizationProvider dateAdapter={dateAdapter}>
-              <DatePicker
+              <DateTimePicker
                 label="Date"
                 name="date"
                 value={training.date}

@@ -48,7 +48,7 @@ function Trainings ()
             filter: true,
             cellRendererFramework: params => 
             <div>
-                {dayjs(params.value).format('DD-MM-YYYY')}
+                {dayjs(params.value).format('DD-MM-YYYY hh:mm')}
             </div>
         },
         {field: 'duration', sortable: true, filter: true},
